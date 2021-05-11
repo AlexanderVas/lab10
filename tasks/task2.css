@@ -6,8 +6,80 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: white;
 }
 
+body #back{
+    text-decoration: none;
+    color: black;
+    position:absolute;
+    border-radius: 2px;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+    top:0;
+    left:0;
+    padding-top:5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+    transition: .2s;
+}
+
+body #back:hover{
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+.rows{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(216, 216, 216);
+}
+
+.row_cell{
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    flex:1;
+    height: 50%;
+    margin: 0px 50px 0px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row_cell--2{
+    flex:2;
+}
+
+.row_cell--3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:3;
+}
+
+.minicell{
+    display: flex;
+    width: 40%;
+    height: 30%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
